@@ -1,0 +1,57 @@
+/* globalStyles.css */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}  
+
+/* Colors */
+:root {
+    --primary-color: #3D75C4;
+    --secondary-color: #C1DFF0;
+    --tertiary-color: #ECF5FB;
+    --header-color: #0C228C;
+    --text-color: #040825;
+    --white-color: #FFFFFF;
+}
+
+/* Global Layout */
+.container-left {
+    width: 320px;
+}
+
+.container-right {
+    width: 672px;
+}
+
+.gutter {
+    width: 32px;
+}
+
+.vertical-line {
+    width: 3px;
+    height: 100%;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+/* Utility Classes */
+.btn {
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: darken(var(--primary-color), 10%);
+}

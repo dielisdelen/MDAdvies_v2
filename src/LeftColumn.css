@@ -1,0 +1,47 @@
+/* Add styles specific to the LeftColumn component. 
+You can utilize the global styles and classes we previously created. 
+This is just a starting point; adjust it as needed. */
+
+.left-column {
+    width: 288px;
+    padding-right: 29px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    width: 100%;
+}
+
+.subheader,
+.footer-info {
+    color: var(--primary-color);
+}
+
+.divider {
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 32px 0;
+    border: none;
+}
+
+.navigation {
+    display: block;
+    margin-bottom: 10px; /* adjust spacing as needed */
+}
+
+.newsletter-box {
+    background-color: var(--tertiary-color);
+    padding: 6px;
+}
+
+.newsletter-box input {
+    margin-right: 8px; /* adjust as needed */
+    background-color: var(--white-color);
+    border-radius: 3px;
+}
+
+.newsletter-box .btn {
+    margin-top: 16px;
+}
