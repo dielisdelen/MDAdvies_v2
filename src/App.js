@@ -6,9 +6,7 @@ import Contact from './pages/Contact';
 import './App.css';
 import './globalStyles.css';
 import LeftColumn from './components/LeftColumn';
-import HomePageRightColumn from './components/HomePageRightColumn';
 
-//import RightColumn from './components/RightColumn/RightColumn';
 
 import {
   BrowserRouter,
@@ -25,7 +23,7 @@ function App() {
 
         <div className="content-area">
           <Routes>
-          <Route path="/" element={<HomePageRightColumn />} />
+          <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/CV" element={<CV />} />
             <Route path="/contact" element={<Contact />} />

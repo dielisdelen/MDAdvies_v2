@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom';
 function LeftColumn() {
     return (
         <div className="left-column">
-            <img src="/public/MDA_Logo.svg" alt="MDA Logo" className="logo" />
+            <img src="/MDA_Logo.svg" alt="MDA Logo" className="logo" />
 
             <p className="subheader">3 zinnen met wat Maarten Delen Advies is en doet. Dit is de subheader van MDA.</p>
 
             <hr className="divider" />
 
             <nav className="navigation">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/CV">CV</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="/" className='navigation'>Home</Link>
+                <Link to="/CV" className='navigation'>CV</Link>
+                <Link to="/about" className='navigation'>Over Maarten</Link>
+                <Link to="/contact" className='navigation'>Contact</Link>
             </nav>
 
             <hr className="divider" />

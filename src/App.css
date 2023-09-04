@@ -5,12 +5,14 @@
   max-width: 1024px; /* as mentioned, your maximum width */
   margin: 0 auto;   /* centers the app-container horizontally */
   gap: 32px;        /* gap between columns */
+  padding-top: 32px;
 }
 
 .left-column {
   width: 320px;
   position: sticky;
   top: 0;
+  border-right: 2px solid #C1DFF0;
 }
 
 .content-area {
@@ -25,13 +27,25 @@
 }
 
 .blue-button {
+  display: block;
+  width: max-content; /* so that the width of the button remains content-based */
+  margin: 0 auto;
   background-color: #3D75C4;
   color: #FFFFFF;
   padding: 8px 16px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
   display: inline-block;
-  text-decoration: none; /* remove underline for links */
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+
+.blue-button.centered-button {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
 
 .content-area img {
@@ -42,4 +56,39 @@
 .contact-input-field {
   display: block;
   margin-bottom: 10px; /* adjust spacing as needed */
+}
+
+.hero-image {
+  margin-bottom: 30px; /* adjust value as needed */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* This creates two equally spaced columns */
+  grid-gap: 20px; /* Spacing between grid items */
+  width: 100%; 
+  max-width: 800px; /* You can adjust this as per your design needs */
+  margin: 0 auto; /* Centers the grid container */
+  margin-bottom: 32px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  height: 200px; /* Adjust based on your needs */
+  padding: 20px; /* Padding inside each block */
+  border: none;
+  border-radius: 4px;
+  background-color: var(--secondary-color);
+}
+
+.grid-item h2 {
+  margin-bottom: 10px;
+  color: var(--header-color);
+}
+
+.grid-item p {
+  text-align: center;
 }

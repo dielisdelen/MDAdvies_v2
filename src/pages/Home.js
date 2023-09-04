@@ -1,12 +1,46 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Home() {
-    return (
-        <div>
-            <h1>Welcome to the MDA Website</h1>
-            <p>This is the home page content...</p>
-        </div>
-    );
+function HomePageRightColumn() {
+  return (
+    <div>
+      <img src="/MDA_Hero_Image.png" alt="Hero" className='hero-image'/>
+
+      <hr className="blue-line" />
+
+      <h1>Wat kan ik voor u doen?</h1>
+      
+      <ul>
+        <li>Rust brengen in uw onderwijsorganisatie</li>
+        <li>Interimmen vanuit een bak ervaring</li>
+        <li>Ingewikkelde projecten vanuit visieontwikkeling</li>
+        <li>Coaching voor schoolleiders</li>
+      </ul>
+      
+      <Link to="/CV" className="blue-button centered-button">Lees verder</Link>
+      
+      <hr className="blue-line" />
+
+      <h1>Ik schrijf ook verhaaltjes</h1>
+
+      <blockquote className='quote'>
+        “Wie ik ben, wat ik voel en wat ik denk, laat zich wel lezen uit mijn verhaaltjes.”
+      </blockquote>
+
+      <Link to="/verhaaltjes" className="blue-button centered-button">Lees ze hier</Link>
+      
+      <hr className="blue-line" />
+
+      <h1>Neem direct contact met mij op</h1>
+
+      {/* Placeholder for the contact form */}
+      <form>
+        <input type="text" placeholder="Name" className="contact-input-field"/>
+        <input type="email" placeholder="Email" className="contact-input-field"/>
+        <textarea placeholder="Message" className="contact-input-field"></textarea>
+        <button type="submit" className="blue-button">Verstuur</button>
+      </form>
+    </div>
+  );
 }
 
-export default Home;
+export default HomePageRightColumn;
