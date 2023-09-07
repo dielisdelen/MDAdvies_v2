@@ -38,7 +38,6 @@
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  margin-bottom: 32px;
 }
 
 .blue-button.centered-button {
@@ -152,4 +151,70 @@
   white-space: nowrap;  /* Prevents the content inside the label from wrapping */
   display: block;       /* Makes the label behave like a block, thus placing each checkbox on a new line */
   margin-bottom: 10px;  /* Some space between the checkboxes */
+}
+
+.about-container {
+  padding-bottom: 64px; /* Space from the top of the page */
+}
+
+.bold-text {
+  font-weight: bold;
+  margin-bottom: 16px; /* Space between the bold text and the next paragraph */
+}
+
+.about-content-wrapper {
+  display: flex;
+  align-items: flex-start; /* Aligns the top edges of the text and the image */
+}
+
+.text-content {
+  flex: 1;
+  margin-right: 16px; /* Space between the text and the image */
+}
+
+.about-image {
+  width: 320px; /* Target size */
+  max-width: 100%; /* Responsiveness */
+  height: auto; 
+}
+
+.contact-container {
+  text-align: left;
+}
+
+.contact-header {
+  font-size: 64px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: var(--header-color);
+}
+
+.contact-form-block {
+  background-color: var(--tertiary-color); /* You can change this to your desired color */
+  padding: 32px;
+  border-radius: 4px;
+  margin-top: 32px;
+}
+
+.contact-form-block input, 
+.contact-form-block textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--primary-color); /* Light blue color, change as needed */
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-bottom: 16px; /* Spacing between each input/textarea */
+  font-family: 'DM Sans', sans-serif;  /* Setting the font to DM Sans */
+  color: var(--header-color); /* Text color */
+}
+
+.contact-form-block textarea {
+  height: 150px; /* Adjust this value based on how tall you want the textarea to be */
+}
+
+/* If you want a focus effect for your inputs and textareas */
+.contact-form-block input:focus, 
+.contact-form-block textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--header-color);
 }

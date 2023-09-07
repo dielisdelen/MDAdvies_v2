@@ -1,21 +1,21 @@
 import React from 'react';
 import '/Users/dielisdelen/Web_DEV/mdawebapp/src/LeftColumn.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function LeftColumn() {
     return (
         <div className="left-column">
             <img src="/MDA_Logo.svg" alt="MDA Logo" className="logo" />
 
-            <p className="subheader">3 zinnen met wat Maarten Delen Advies is en doet. Dit is de subheader van MDA.</p>
+            <p className="subheader">3 zinnen met wat Maarten Delen Advies is en doet. Dit is de subheader van MDA. Test</p>
 
             <hr className="divider" />
 
             <nav className="navigation">
-                <Link to="/" className='navigation'>Home</Link>
-                <Link to="/CV" className='navigation'>CV</Link>
-                <Link to="/about" className='navigation'>Over Maarten</Link>
-                <Link to="/contact" className='navigation'>Contact</Link>
+                <NavLink to="/" className='navigation'>Home</NavLink>
+                <NavLink to="/CV" className='navigation'>CV</NavLink>
+                <NavLink to="/about" className='navigation'>Over Maarten</NavLink>
+                <NavLink to="/contact" className='navigation'>Contact</NavLink>
             </nav>
 
             <hr className="divider" />

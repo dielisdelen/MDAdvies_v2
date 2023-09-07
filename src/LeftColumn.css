@@ -31,6 +31,19 @@ This is just a starting point; adjust it as needed. */
     margin-bottom: 10px; /* adjust spacing as needed */
 }
 
+.navigation a {
+    text-decoration: none; /* removes underline */
+    color: var(--primary-color);
+}
+
+.navigation a:visited {
+    color: var(--primary-color);
+}
+
+.navigation a.active {
+    font-weight: bold;
+}
+
 .newsletter-box {
     background-color: var(--tertiary-color);
     padding: 6px;
@@ -38,8 +51,11 @@ This is just a starting point; adjust it as needed. */
 
 .newsletter-box input {
     margin-right: 8px; /* adjust as needed */
+    border: 1px solid var(--primary-color);
     background-color: var(--white-color);
     border-radius: 3px;
+    font-family: 'DM Sans', sans-serif;  /* Setting the font to DM Sans */
+    color: var(--header-color);         /* Setting the font color */
 }
 
 .newsletter-box .btn {
