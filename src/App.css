@@ -92,3 +92,64 @@
 .grid-item p {
   text-align: center;
 }
+
+.work-experience {
+  margin-top: 64px;
+}
+
+.work-item {
+  padding: 5px 20px 20px 20px; /* Reduced top padding */
+  border: 1px solid var(--secondary-color);
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.work-item h3 {
+  margin-bottom: -10px; /* Reduced spacing between title and company name */
+  color: var(--header-color);
+}
+
+.work-item h4 {
+  margin-bottom: -10px;
+}
+
+.work-item p:first-of-type {
+  margin-bottom: -10px;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+.tag {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 5px 15px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+}
+
+.tag-filters {
+  margin-bottom: 64px;
+}
+
+/* Add more spacing between checkbox sets (checkbox + label) */
+.tag-filters label {
+  margin-right: 15px;
+}
+
+.filter-toggle {
+  margin-bottom: 16px;
+}
+
+.filter-container {
+  background-color: var(--secondary-color);  /* the blue background */
+  padding: 10px; /* give it some space inside */
+  border-radius: 4px; /* rounded corners */
+  margin-bottom: 32px; /* space below the container */
+}
+
+.filter-container label {
+  white-space: nowrap;  /* Prevents the content inside the label from wrapping */
+  display: block;       /* Makes the label behave like a block, thus placing each checkbox on a new line */
+  margin-bottom: 10px;  /* Some space between the checkboxes */
+}
