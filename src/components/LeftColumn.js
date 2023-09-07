@@ -1,5 +1,5 @@
 import React from 'react';
-import '/Users/dielisdelen/Web_DEV/mdawebapp/src/LeftColumn.css';
+import '../LeftColumn.css';
 import { NavLink } from 'react-router-dom';
 
 function LeftColumn() {
