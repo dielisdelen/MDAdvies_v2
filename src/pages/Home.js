@@ -32,13 +32,9 @@ function HomePageRightColumn() {
 
       <h1>Neem direct contact met mij op</h1>
 
-      {/* Placeholder for the contact form */}
-      <form>
-        <input type="text" placeholder="Name" className="contact-input-field"/>
-        <input type="email" placeholder="Email" className="contact-input-field"/>
-        <textarea placeholder="Message" className="contact-input-field"></textarea>
-        <button type="submit" className="blue-button">Verstuur</button>
-      </form>
+      <Link to="/Contact" className="blue-button centered-button">Klik hier</Link>
+
+     
     </div>
   );
 }

@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../LeftColumn.css';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
 
 function LeftColumn() {
+    const [email, setEmail] = useState(''); // <-- Create state for the email
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        
+        try {
+            const response = await axios.post('http://localhost:5000/submit-email', { email });
+            console.log(response.data.message);
+        } catch (error) {
+            console.error('Error submitting email:', error);
+        }
+    };
+
     return (
         <div className="left-column">
             <img src="/MDA_Logo.svg" alt="MDA Logo" className="logo" />
@@ -23,8 +37,14 @@ function LeftColumn() {
             <div className="newsletter-box">
                 <h3>UKV’s direct in je mailbox ontvangen?</h3>
                 <p>Vul hier je emailadres in.</p>
-                <input className="newsletter-box input" type="email" placeholder="Email" />
-                <button className="btn">Verstuur</button>
+                <input 
+                    className="newsletter-box input"
+                    type="email"
+                    placeholder="Email"
+                    value={email} // <-- Bind the email state
+                    onChange={e => setEmail(e.target.value)} // <-- Update state on change
+                />
+                <button className="btn" onClick={handleSubmit}>Verstuur</button>
             </div>
 
             <hr className="divider" />
